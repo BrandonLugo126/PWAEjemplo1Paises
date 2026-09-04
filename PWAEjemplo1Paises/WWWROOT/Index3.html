@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorador de Países</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Explorador de Países</h1>
+    </header>
+    <template id="vistas">
+        <section class="main" id="main">
+            <div class="hero">
+                <div>
+                    <h2>Descubre el mundo</h2>
+                    <p>Selecciona un país para ver sus detalles.</p>
+                </div>
+                <div style="font-size:3rem;">🌎</div>
+            </div>
+
+            <div class="filters">
+                <a href="#" class="active">Europa</a>
+                <a href="#">Asia</a>
+                <a href="#">África</a>
+                <a href="#">Américas</a>
+                <a href="#">Oceanía</a>
+                <a href="#">Antártida</a>
+            </div>
+    
+            <div class="country-grid">
+                <a href="#pais_espana" class="country-card">
+                    <div class="flag"><img src="https://flagcdn.com/es.svg" alt="Bandera de España" /></div>
+                    <div class="info"><h3>España</h3><p>📍 Madrid</p></div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#pais_francia" class="country-card">
+                    <div class="flag"><img src="https://flagcdn.com/fr.svg" alt="Bandera de Francia" /></div>
+                    <div class="info"><h3>Francia</h3><p>📍 París</p></div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#pais_alemania" class="country-card">
+                    <div class="flag"><img src="https://flagcdn.com/de.svg" alt="Bandera de Alemania" /></div>
+                    <div class="info"><h3>Alemania</h3><p>📍 Berlín</p></div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#pais_italia" class="country-card">
+                    <div class="flag"><img src="https://flagcdn.com/it.svg" alt="Bandera de Italia" /></div>
+                    <div class="info"><h3>Italia</h3><p>📍 Roma</p></div>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+
+        </section>
+   
+        <section class="FichaPaises" >
+            <a href="index3.html" class="back-link">← Volver a la lista</a>
+            <div id="pais-alemania">
+                <article class="detail-card" id="pais_alemania">
+                    <div class="flag-big"><img src="https://flagcdn.com/de.svg" alt="Bandera de Alemania" /></div>
+                    <h2>Alemania</h2>
+                    <p class="official-name">República Federal de Alemania</p>
+                    <div class="detail-grid">
+                        <div class="item"><span class="label">Capital</span><div class="value">Berlín</div></div>
+                        <div class="item"><span class="label">Región</span><div class="value">Europa · Central</div></div>
+                        <div class="item"><span class="label">Población</span><div class="value">83.200.000</div></div>
+                        <div class="item"><span class="label">Área</span><div class="value">357.022 km²</div></div>
+                        <div class="item"><span class="label">Idiomas</span><div class="value">Alemán</div></div>
+                        <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+                    </div>
+                    <div class="border-countries">
+                        <h4>Países fronterizos</h4>
+                        <div class="border-tags">
+                            <a href="pais-francia.html">Francia</a>
+                            <span>Suiza</span>
+                            <span>Austria</span>
+                            <span>Polonia</span>
+                            <span>Dinamarca</span>
+                        </div>
+                    </div>
+                    <div class="detail-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Argentina" target="_blank">🗺️ Ver en Google Maps</a>
+                    </div>
+                </article>
+            </div>
+            <div id="pais-espana">
+                <article class="detail-card" id="pais_espana">
+                    <div class="flag-big"><img src="https://flagcdn.com/es.svg" alt="Bandera de España" /></div>
+                    <h2>España</h2>
+                    <p class="official-name">Reino de España</p>
+                    <div class="detail-grid">
+                        <div class="item"><span class="label">Capital</span><div class="value">Madrid</div></div>
+                        <div class="item"><span class="label">Región</span><div class="value">Europa · Meridional</div></div>
+                        <div class="item"><span class="label">Población</span><div class="value">47.350.000</div></div>
+                        <div class="item"><span class="label">Área</span><div class="value">505.992 km²</div></div>
+                        <div class="item"><span class="label">Idiomas</span><div class="value">Español</div></div>
+                        <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+                    </div>
+                    <div class="border-countries">
+                        <h4>Países fronterizos</h4>
+                        <div class="border-tags">
+                            <a href="pais-francia.html">Francia</a>
+                            <span>Portugal</span>
+                            <span>Andorra</span>
+                        </div>
+                    </div>
+                    <div class="detail-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Espana" target="_blank">🗺️ Ver en Google Maps</a>
+                    </div>
+                </article>
+            </div>
+            <div id="pais-francia">
+                <article class="detail-card" id="pais_francia">
+                    <div class="flag-big"><img src="https://flagcdn.com/fr.svg" alt="Bandera de Francia" /></div>
+                    <h2>Francia</h2>
+                    <p class="official-name">República Francesa</p>
+                    <div class="detail-grid">
+                        <div class="item"><span class="label">Capital</span><div class="value">París</div></div>
+                        <div class="item"><span class="label">Región</span><div class="value">Europa · Occidental</div></div>
+                        <div class="item"><span class="label">Población</span><div class="value">67.390.000</div></div>
+                        <div class="item"><span class="label">Área</span><div class="value">551.695 km²</div></div>
+                        <div class="item"><span class="label">Idiomas</span><div class="value">Francés</div></div>
+                        <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+                    </div>
+                    <div class="border-countries">
+                        <h4>Países fronterizos</h4>
+                        <div class="border-tags">
+                            <a href="pais-espana.html">España</a>
+                            <a href="pais-alemania.html">Alemania</a>
+                            <a href="pais-italia.html">Italia</a>
+                            <span>Suiza</span>
+                            <span>Bélgica</span>
+                        </div>
+                    </div>
+                    <div class="detail-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Francia" target="_blank">🗺️ Ver en Google Maps</a>
+                    </div>
+                </article>
+            </div>
+            <div id="pais-italia">
+                <article class="detail-card" id="pais_italia">
+                    <div class="flag-big"><img src="https://flagcdn.com/it.svg" alt="Bandera de Italia" /></div>
+                    <h2>Italia</h2>
+                    <p class="official-name">República Italiana</p>
+                    <div class="detail-grid">
+                        <div class="item"><span class="label">Capital</span><div class="value">Roma</div></div>
+                        <div class="item"><span class="label">Región</span><div class="value">Europa · Meridional</div></div>
+                        <div class="item"><span class="label">Población</span><div class="value">60.240.000</div></div>
+                        <div class="item"><span class="label">Área</span><div class="value">301.340 km²</div></div>
+                        <div class="item"><span class="label">Idiomas</span><div class="value">Italiano</div></div>
+                        <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+                    </div>
+                    <div class="border-countries">
+                        <h4>Países fronterizos</h4>
+                        <div class="border-tags">
+                            <a href="pais-francia.html">Francia</a>
+                            <span>Suiza</span>
+                            <span>Austria</span>
+                            <span>Eslovenia</span>
+                        </div>
+                    </div>
+                    <div class="detail-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Italia" target="_blank">🗺️ Ver en Google Maps</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </template>
+
+
+    <script>
+        const cardSection = document.querySelectorAll(".FichaPaises");
+        const template = document.querySelector("#vistas");
+        const cache = {};
+
+        function getCard(hash) {
+            if (!hash) {
+                return null;
+            }
+            if (hash in cache) {
+                return cache[hash];
+            }
+            else {
+                
+                let view = template.content.querySelector(hash ? hash : "#main");
+                if (view) {
+                    let clon = view.cloneNode(true)
+
+                    cache[hash] = clon;
+
+                    return clon;
+                }
+                else {
+                    return null;
+                }
+            }
+        }
+
+        function route() {
+            let hash = window.location.hash;
+
+            let vista = getCard(hash) ?? getCard("#main");
+            cardSection.replaceChildren(vista);
+
+        }
+
+        window.addEventListener("hashchange", function () {
+            route();
+        });
+        route();
+    </script>
+
+</body>
+</html>

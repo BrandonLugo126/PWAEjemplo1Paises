@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorador de Países</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Explorador de Países</h1>
+    </header>
+
+    <section class="main">
+        <div class="hero">
+            <div>
+                <h2>Descubre el mundo</h2>
+                <p>Selecciona un país para ver sus detalles.</p>
+            </div>
+            <div style="font-size:3rem;">🌎</div>
+        </div>
+
+        <div class="filters">
+            <a href="#" class="active" data-region="Europe">Europa</a>
+            <a href="#" data-region="Asia">Asia</a>
+            <a href="#" data-region="Africa">África</a>
+            <a href="#" data-region="Americas">Américas</a>
+            <a href="#" data-region="Oceania">Oceanía</a>
+            <a href="#" data-region="Polar">Antártida</a>
+        </div>
+
+        <div class="country-grid">
+           
+           
+        </div>
+    </section>
+
+    <template id="plantillas">
+        <a href="#pais_espana" class="country-card">
+            <div class="flag"><img src="https://flagcdn.com/es.svg" /></div>
+            <div class="info"><h3>España</h3><p>📍 Madrid</p></div>
+            <span class="arrow">→</span>
+        </a>
+    </template>
+    <section class="FichaPaises">
+        <a href="index.html" class="back-link">← Volver a la lista</a>
+
+        <article class="detail-card" id="pais_alemania">
+            <div class="flag-big"><img src="https://flagcdn.com/de.svg" alt="Bandera de Alemania" /></div>
+            <h2>Alemania</h2>
+            <p class="official-name">República Federal de Alemania</p>
+            <div class="detail-grid">
+                <div class="item"><span class="label">Capital</span><div class="value">Berlín</div></div>
+                <div class="item"><span class="label">Región</span><div class="value">Europa · Central</div></div>
+                <div class="item"><span class="label">Población</span><div class="value">83.200.000</div></div>
+                <div class="item"><span class="label">Área</span><div class="value">357.022 km²</div></div>
+                <div class="item"><span class="label">Idiomas</span><div class="value">Alemán</div></div>
+                <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+            </div>
+            <div class="border-countries">
+                <h4>Países fronterizos</h4>
+                <div class="border-tags">
+                    <a href="pais-francia.html">Francia</a>
+                    <span>Suiza</span>
+                    <span>Austria</span>
+                    <span>Polonia</span>
+                    <span>Dinamarca</span>
+                </div>
+            </div>
+            <div class="detail-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=Argentina" target="_blank">🗺️ Ver en Google Maps</a>
+            </div>
+        </article>
+
+        <article class="detail-card" id="pais_espana">
+            <div class="flag-big"><img src="https://flagcdn.com/es.svg" alt="Bandera de España" /></div>
+            <h2>España</h2>
+            <p class="official-name">Reino de España</p>
+            <div class="detail-grid">
+                <div class="item"><span class="label">Capital</span><div class="value">Madrid</div></div>
+                <div class="item"><span class="label">Región</span><div class="value">Europa · Meridional</div></div>
+                <div class="item"><span class="label">Población</span><div class="value">47.350.000</div></div>
+                <div class="item"><span class="label">Área</span><div class="value">505.992 km²</div></div>
+                <div class="item"><span class="label">Idiomas</span><div class="value">Español</div></div>
+                <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+            </div>
+            <div class="border-countries">
+                <h4>Países fronterizos</h4>
+                <div class="border-tags">
+                    <a href="pais-francia.html">Francia</a>
+                    <span>Portugal</span>
+                    <span>Andorra</span>
+                </div>
+            </div>
+            <div class="detail-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=Espana" target="_blank">🗺️ Ver en Google Maps</a>
+            </div>
+        </article>
+
+        <article class="detail-card" id="pais_francia">
+            <div class="flag-big"><img src="https://flagcdn.com/fr.svg" alt="Bandera de Francia" /></div>
+            <h2>Francia</h2>
+            <p class="official-name">República Francesa</p>
+            <div class="detail-grid">
+                <div class="item"><span class="label">Capital</span><div class="value">París</div></div>
+                <div class="item"><span class="label">Región</span><div class="value">Europa · Occidental</div></div>
+                <div class="item"><span class="label">Población</span><div class="value">67.390.000</div></div>
+                <div class="item"><span class="label">Área</span><div class="value">551.695 km²</div></div>
+                <div class="item"><span class="label">Idiomas</span><div class="value">Francés</div></div>
+                <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+            </div>
+            <div class="border-countries">
+                <h4>Países fronterizos</h4>
+                <div class="border-tags">
+                    <a href="pais-espana.html">España</a>
+                    <a href="pais-alemania.html">Alemania</a>
+                    <a href="pais-italia.html">Italia</a>
+                    <span>Suiza</span>
+                    <span>Bélgica</span>
+                </div>
+            </div>
+            <div class="detail-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=Francia" target="_blank">🗺️ Ver en Google Maps</a>
+            </div>
+        </article>
+
+        <article class="detail-card" id="pais_italia">
+            <div class="flag-big"><img src="https://flagcdn.com/it.svg" alt="Bandera de Italia" /></div>
+            <h2>Italia</h2>
+            <p class="official-name">República Italiana</p>
+            <div class="detail-grid">
+                <div class="item"><span class="label">Capital</span><div class="value">Roma</div></div>
+                <div class="item"><span class="label">Región</span><div class="value">Europa · Meridional</div></div>
+                <div class="item"><span class="label">Población</span><div class="value">60.240.000</div></div>
+                <div class="item"><span class="label">Área</span><div class="value">301.340 km²</div></div>
+                <div class="item"><span class="label">Idiomas</span><div class="value">Italiano</div></div>
+                <div class="item"><span class="label">Moneda</span><div class="value">Euro (€)</div></div>
+            </div>
+            <div class="border-countries">
+                <h4>Países fronterizos</h4>
+                <div class="border-tags">
+                    <a href="pais-francia.html">Francia</a>
+                    <span>Suiza</span>
+                    <span>Austria</span>
+                    <span>Eslovenia</span>
+                </div>
+            </div>
+            <div class="detail-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=Italia" target="_blank">🗺️ Ver en Google Maps</a>
+            </div>
+        </article>
+    </section>
+
+    <script>
+
+        const plantillas = document.querySelector("#plantillas");
+
+        const apikey ="rc_live_ab350b520e82412db0601163b8aa3f0e"
+        const cards = document.querySelectorAll(".detail-card");
+        const cardSection = document.querySelector(".FichaPaises");
+        const mainSection = document.querySelector(".main");
+
+
+        document.querySelector(".filters").addEventListener("click",async function (e) {
+            if (e.target.tagName==="A") {
+                let region = e.target.dataset.region;
+                await descargarPorRegion(region);
+            }
+        });
+
+        async function descargarPorRegion(region) {
+            const response = await fetch(
+                `https://countries.dev/region/${region}`               
+            );
+            if (response.ok) {
+
+                var clon = plantillas.content.querySelector(".country-card").cloneNode(true);
+
+                const data = await response.json();
+                console.log(data);
+
+            }
+        }
+
+
+        function route() {
+            let hash = window.location.hash;
+
+            for (let c of cards) {
+                if ("#"+c.id==hash) {
+                    c.style.display = "block";
+                    mainSection.style.display = "none";
+                    cardSection.style.display = "block";
+                }
+            }
+           
+        }
+
+        window.addEventListener("hashchange", function() {
+            route();
+        });
+    </script>
+
+</body>
+</html>
