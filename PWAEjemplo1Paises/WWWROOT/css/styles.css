@@ -261,6 +261,6 @@ header h1 {
 }
 
 
-/*.detail-card, .FichaPaises {
+.detail-card, .FichaPaises {
     display: none;
-}*/
+}
