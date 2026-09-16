@@ -150,7 +150,7 @@
                 detalles[2].textContent = data.population.toLocaleString();
                 detalles[3].textContent = data.area.toLocaleString() + " km²";
                 detalles[4].textContent = data.languages.map(x=>x.name).join(", ");
-                detalles[5].textContent = data.currencies.map(c => c.name).join(", ");
+                detalles[5].textContent = data.currencies?.map(c => c.name).join(", ") | "No disponible";
                 paiscard.querySelector(".detail-actions a").href = `https://www.google.com/maps/search/?api=1&query=${data.name}`;
 
                 paiscard.id = "pais-" + encodeURIComponent(data.name.toLowerCase().replaceAll(" ", "-"));
